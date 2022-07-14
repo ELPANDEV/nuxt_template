@@ -1,0 +1,10 @@
+@mixin scroll_horizontal($height: 6px) {
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    background-color: #ddd;
+    height: $height;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+  }
+}
